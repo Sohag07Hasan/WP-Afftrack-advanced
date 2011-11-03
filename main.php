@@ -8,9 +8,9 @@
  * version: 1.0.0
  * */
 
-if(!class_exists('wpafftrack_clicky')) : 
+if(!class_exists('clicky_plus')) : 
 	
-	class wpafftrack_clicky{
+	class clicky_plus{
 		
 		function __construct(){
 			register_activation_hook( __FILE__, array($this,'table_creation'));			
@@ -340,7 +340,7 @@ if(!class_exists('wpafftrack_clicky')) :
 	
 	
 	//object creation
-	$wpafftrack_clicky = new wpafftrack_clicky();
+	$wpafftrack_clicky = new clicky_plus();
 endif;
 
 ?>

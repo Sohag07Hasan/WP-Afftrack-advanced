@@ -4,9 +4,9 @@
  * this class is to manipulate the admin panel
  */
 
-if(!class_exists('wpafftrack_clicky_admin')) : 
+if(!class_exists('clickyplus_clicky_admin')) : 
 
-	class wpafftrack_clicky_admin{
+	class clickyplus_clicky_admin{
 		function __construct(){
 			add_action('admin_menu', array($this,'create_a_menu'));
 			add_action('init',array($this,'formdata_manipulation'));
@@ -483,5 +483,5 @@ if(!class_exists('wpafftrack_clicky_admin')) :
 	
 	}
 	//object
-	$wpafftrack_admin = new wpafftrack_clicky_admin();
+	$ClicyPlus_admin = new clickyplus_clicky_admin();
 endif;

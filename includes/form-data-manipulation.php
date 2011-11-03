@@ -10,9 +10,9 @@ $link_id = (int)$_POST['link_id'];
 
 if(!$status) $status = 'active' ;
 
-global $wpafftrack_clicky;
+global $ClicyPlus_clicky;
 
-//$sid = $wpafftrack_clicky->randmonstring();
+
 
 
 if($name == ''){

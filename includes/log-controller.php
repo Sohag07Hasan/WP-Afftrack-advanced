@@ -11,7 +11,7 @@ $afflink = get_option('siteurl').'/sale/' . $type;
 
 //log the data into an array
 
-global $wpafftrack_clicky;
+global $ClicyPlus_clicky;
 
 $error = array();
 
@@ -42,7 +42,7 @@ foreach($sids as $sid){
 			);
 			*/
 	
-		if(!$wpafftrack_clicky->clicky_log($clicky_log)){
+		if(!$ClicyPlus_clicky->clicky_log($clicky_log)){
 		$error[] = $sid;
 			
 	}
